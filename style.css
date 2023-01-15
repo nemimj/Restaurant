@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+
+/* * navbar section */
+
+nav{
+    box-shadow: 0 0 32px -21px rgb(15 0 0 / 65%);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+   
+ 
+}
+
+.nav{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+   
+}
+
+.hamburger i{
+    font-size: 2rem;
+}
+.logo img{
+    width:70px;
+   margin-left: auto;
+}
+
+
+.logo img:hover{
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* * container section */
+
+main{
+    margin-top: 30px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    max-width: 30rem;
+    margin: auto;
+
+   
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-content h1{
+    font-size: 3.5rem;
+}
+
+.tag{
+    background-color: #149f39;
+    width: 180px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.explore-btn{
+    width: 100px;
+    padding: 10px;
+    background-color: yellowgreen;
+    border: 0;
+    border-radius: 2px;
+}
+
+.explore-btn:hover{
+    background-color:rgb(135, 179, 48) ;
+}
+
+
+/* * features section  */
+
+.features{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.items{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.items:hover{
+   
+    box-shadow: 10px 10px 20px -12px #00000042;
+}
+
+.icon-size{
+    font-size: 3rem;
+}
+
+hr{
+   border: 1px solid grey;
+    width: 70%;
+    margin: auto;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.explore-menu{
+    padding: 20px;
+}
+
+.explore-menu button{
+    text-transform: uppercase;
+}
+
+.explore-menu h3{
+    margin-top: 20px;
+   
+}
+
+.grid-images{
+    display: grid;
+    grid-template-areas: 
+    'first first two three'
+    'first first two seven'
+    'four five six seven';
+    gap: 0.8rem;
+}
+
+
+.grid-images img{
+    width: 100%;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.grid-images img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in;
+}
+
+.grid-images :nth-child(1){
+    grid-area: first;
+}
+.grid-images :nth-child(2){
+    grid-area: two;
+}
+.grid-images :nth-child(3){
+    grid-area: three;
+}
+.grid-images :nth-child(4){
+    grid-area: four;
+}
+.grid-images :nth-child(5){
+    grid-area: five;
+}
+.grid-images :nth-child(6){
+    grid-area: six;
+}
+.grid-images :nth-child(7){
+    grid-area: seven;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: 3.5rem auto 0;
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
+footer{
+    background-color: #fff0db;
+    
+}
+
+.footer img{
+    align-items: center;
+}
+
+
+input{
+    margin-top: 0.5rem;
+    padding:0.2rem;
+    text-align: center;
+}
+
+.follow-us{
+    margin:1rem 0;
+}
+
+.follow-us i{
+    font-size: 1.9rem;
+}
+
+
+
+@media screen and (max-width:802px) {
+
+    .hero{
+        flex-direction: column;
+    }
+
+   .hero-image img{
+    width: 100%;
+    text-align: right;
+   }
+
+    .hero-content{
+        align-items: center;
+    }
+    
+   .hero-content h1{
+    font-size: 2rem;
+   }
+
+
+    .hero-content p{
+        width: 80%;
+        text-align:center;
+    }
+.features{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+   
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+}
